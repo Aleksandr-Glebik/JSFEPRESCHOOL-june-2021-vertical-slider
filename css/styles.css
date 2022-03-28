@@ -52,7 +52,6 @@ body {
 
 .sidebar h1 {
     font-size: 32px;
-
 }
 
 .sidebar p {
@@ -76,10 +75,14 @@ button {
     cursor: pointer;
     font-size: 18px;
     padding: 10px;
+    transition: all 0.5s;
 }
 
 button:hover {
      color: black;
+}
+button:active {
+     color: red;
 }
 
 button:focus {
@@ -96,4 +99,52 @@ button:focus {
     transform: translateY(-100%);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px ;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar h1 {
+        font-size: 28px;
+    }
+
+    .sidebar p {
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .sidebar div {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sidebar h1 {
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    .sidebar p {
+        width: 210px;
+        font-size: 12px;
+        padding: 10px 20px 10px 10px;
+        align-self: flex-start;
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 576px) {
+    .sidebar p {
+        width: 146px;
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 425px) {
+    .sidebar p {
+        width: 110px;
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 375px) {
+    .sidebar p {
+        width: 110px;
+        margin-top: -125px;
+    }
 }
